@@ -15,3 +15,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.message-form {
+  z-index: 999;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  max-width: 300px;
+}
+
+.thanks-form {
+  z-index: 999;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  max-width: 220px;
+}
+
+.footer {
+  z-index: 999;
+  position: absolute;
+  bottom: 35px;
+  left: 5px;
+  padding: 5px;
+}
+
+.sidebar {
+  z-index: 999;
+  position: absolute;
+  top: 49px;
+  left: 0px;
+  padding: 5px;
+  height: 50%;
+  background-color: rgba(244, 244, 244, 0.8);
+  width: 15%;
+}
+
+.sidebar ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 1;
+}
+
+.sidebar li {
+  margin: 0.5rem 0;
+}
+
+.button {
+  z-index: 999;
+  position: absolute;
+  top: 49px;
+  left: 30%;
+  padding: 5px;
+  height: 50%;
+  background-color: rgba(244, 244, 244, 0.8);
+  width: 15%;
+}

@@ -3,24 +3,34 @@ import "./Header.scss";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const activeStyle = { color: "#F15B2A" };
+  const activeStyle = { color: "#ffffff" };
   return (
     <nav>
-      <NavLink to="/" activeStyle={activeStyle} exact>
-        Home
-      </NavLink>
-      {" | "}
-      <NavLink to="/courses" activeStyle={activeStyle}>
-        Courses
-      </NavLink>
-      {" | "}
-      <NavLink to="/about" activeStyle={activeStyle}>
-        About
-      </NavLink>
-      {" | "}
-      <NavLink to="/map" activeStyle={activeStyle}>
-        Map
-      </NavLink>
+      <ul>
+        <li>
+          <NavLink to="/maps" activeStyle={activeStyle} exact>
+            Maps
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/courses" activeStyle={activeStyle}>
+            Courses
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/about" activeStyle={activeStyle}>
+            About
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/map" activeStyle={activeStyle}>
+            Map
+          </NavLink>
+        </li>
+      </ul>
     </nav>
   );
 };
